@@ -1,0 +1,55 @@
+body{
+        padding: 0;
+        margin: 0;
+    min-height:100vh;
+    background: url(img/bg.jpg) repeat-x;
+    background-position:center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.car{ 
+             margin-top: 400px;
+ animation:carMoving 5s infinite linear;
+}
+.bodyCar{
+   position: absolute;
+   top: 62.3%;
+   right:0;
+
+}
+.wheel{
+     position: absolute;
+     animation: Wheel  6s infinite linear; 
+     bottom: 0%;
+     margin-top: 100px;
+}
+.RWheel{
+    top: 78.5%;
+    right:5.5%;
+  
+}
+
+.LWheel{
+    top: 78%;
+   right:38.5%; 
+}
+    @keyframes carMoving{
+    0%{ 
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes Wheel{
+    0%{
+
+       rotate: 0deg;
+    }
+    100%{
+
+       rotate: -360deg;
+
+    }
+} 
